@@ -38,3 +38,12 @@ class GoodEvenView(View):
         return JsonResponse (respones_data)
 
 class GoodNightView(View):
+
+    def get(self,request):
+
+        respones_data ={"message":"Goodnight"}
+
+        return JsonResponse(respones_data)
+        
+
+        
